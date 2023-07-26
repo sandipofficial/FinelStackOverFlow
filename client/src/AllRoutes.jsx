@@ -30,8 +30,8 @@ const AllRoutes = () => {
       <Route path="/Users/:id" element={<UserProfile />} />
       <Route path="/stackoverflow-community/post/:id" element={<PostPage />} />
       <Route path="/stackoverflow-community" element={<CommunityHome />} />
-      <Route path="/Premium" element={<Premium />} />
-      <Route path='/Plans' element={< Plans />}/>
+      {/* <Route path="/Premium" element={<Premium />} /> */}
+      <Route path='/Plans' element={< Premium />}/>
       <Route path='/Payment' element={< StripeForm />}/>
 
     </Routes>

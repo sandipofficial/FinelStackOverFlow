@@ -21,7 +21,7 @@ function Premium() {
   };
 
   const publishableKey =
-  'pk_test_51NCmmnSA5EzUw4rHhg1n9cZG7Qmc0bwPkpSfK6yVzwv4BvD4tuYnwbFHCmu1mkUY6smYTCUdoyzKbN2Vr0Z5GOOh002BXbhWFC';
+  'pk_test_51NXvTISAATW6bcVQOwRupwcElOQB7SCJnAkbq8g0F2dfOuj0GQAG80Tvo3BpM1LrAQc7184yvoNFvMpBLJqLWzQv00R5UhjBMS';
   const [product, setProduct] = useState({
     name: 'Gold',
     price: 1000,
@@ -56,6 +56,7 @@ function Premium() {
       if (response.status === 200) {
         handleSuccess();
       }
+
     } catch (error) {
       handleFailure();
       console.log(error);
@@ -96,7 +97,7 @@ function Premium() {
                 billingAddress
                 shippingAddress
                 amount={priceForStripe}
-                description={`Your total is ₹${product.price}`}
+                description={`Your total is ₹100`}
                 token={payNow}
                 />
             </div>
@@ -110,15 +111,15 @@ function Premium() {
                     
                 </ul>
                 <StripeCheckout class="abs"
-        stripeKey={publishableKey}
-        label="Pay Now"
-        name="Pay With Credit Card"
-        billingAddress
-        shippingAddress
-        amount={priceForStripe}
-        description={`Your total is ₹${product.price}`}
-        token={payNow}
-        />
+                  stripeKey={publishableKey}
+                  label="Pay Now"
+                  name="Pay With Credit Card"
+                  billingAddress
+                  shippingAddress
+                  amount={priceForStripe}
+                  description={`Your total is ₹1000`}
+                  token={payNow}
+                  />
         
             </div>
         </div>
