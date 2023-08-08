@@ -8,6 +8,7 @@
   background: #fff;
   position: sticky;
   top: 150px;
+  /* background-color: aqua; */
 }
 
 .side-nav {
@@ -20,6 +21,7 @@
 
 .side-nav-div {
   padding: 10px 0px;
+  font-weight: bold;
 }
 
 .side-nav-div div {
@@ -34,6 +36,11 @@
   justify-content: flex-start;
   padding-left: 10px;
   transition: 0.2s;
+  /* background-color: #ef8236; */
+  border-radius: 10px;
+  border: 1px 1px 1px 1px #888888;
+  margin-bottom: 2px;
+  padding-right: 2px;
 }
 
 .side-nav-links:hover {

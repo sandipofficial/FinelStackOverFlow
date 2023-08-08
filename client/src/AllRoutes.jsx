@@ -15,6 +15,7 @@ import Otp from "./Pages/Otp/Otp";
 import Premium from "./Pages/Premium/Premium";
 import Plans from './Pages/Plans/Plans'
 import StripeForm from './Pages/Payment/StripeForm'
+import About from './components/About/About'
 
 const AllRoutes = () => {
   return (
@@ -33,6 +34,8 @@ const AllRoutes = () => {
       {/* <Route path="/Premium" element={<Premium />} /> */}
       <Route path='/Plans' element={< Premium />}/>
       <Route path='/Payment' element={< StripeForm />}/>
+      <Route path='/About' element={< About />}/>
+      
 
     </Routes>
   );

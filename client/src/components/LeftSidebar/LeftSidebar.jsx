@@ -45,7 +45,7 @@ const LeftSidebar = () => {
           <p>Home</p>
         </NavLink>
         <NavLink
-          to="/about"
+          to="/About"
           className="side-nav-links"
           activeclassname="active"
           onClick={toggleSideBar}

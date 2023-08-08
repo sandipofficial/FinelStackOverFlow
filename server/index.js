@@ -65,6 +65,7 @@ mongoose
   .then(() =>
     app.listen(PORT, () => {
       console.log(`server running on port ${PORT}`);
+      console.log(`db = ${DATABASE_URL}`)
     })
   )
   .catch((err) => console.log(err.message));
